@@ -5,25 +5,67 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private Transform topPlatform;
+    BallController ballController;
+
+    GameObject currentPlatform;
+
     [SerializeField]
-    private Transform bottomPlatform;
+    float platformDist;
+
     [SerializeField]
-    private int platformCount;
-    private float platformDist;
+    GameObject helixPlatformPrefab;
+
+    int platformCount;
+
     [SerializeField]
-    private GameObject helixPlatformPrefab;
-    private int disabledHelixPart;
+    int platformTotal;
+
+    int score;
+
+
+    public static GameManager singleton;
 
     void Awake()
     {
-        Transform helix = GameObject.FindWithTag("Helix").transform;
-        platformDist = (topPlatform.position.y - bottomPlatform.position.y) / platformCount;
-        Debug.Log(bottomPlatform.position.y);
-        for (int i = 0; i < platformCount; i++)
+        if (singleton == null) 
         {
-            GameObject helixPlatform = Instantiate(helixPlatformPrefab, topPlatform.position - Vector3.up * i*platformDist, Quaternion.identity,helix);
-            helixPlatform.name = "HelixPlatform " + i;
+            singleton = this;
         }
+        else if (singleton != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+    void Start()
+    {
+        currentPlatform = Instantiate(helixPlatformPrefab, Vector3.zero, Quaternion.identity);
+    }
+
+    public void NextPlatform()
+    {
+        if (platformCount >= platformTotal)
+        {
+            NextLevel();
+            return;
+        }
+        currentPlatform.SetActive(false);
+        score++;
+        platformCount++;
+        Debug.Log(score);
+        GameObject helixPlatform = Instantiate(helixPlatformPrefab, Vector3.up * -score * platformDist , Quaternion.identity);
+        helixPlatform.name = "HelixPlatform " + platformCount;
+        currentPlatform= helixPlatform;
+    }
+
+    public void NextLevel()
+    {
+
+    }
+
+    public void RestartLevel()
+    {
+        score = 0;
+        ballController.ResetPosition();
     }
 }

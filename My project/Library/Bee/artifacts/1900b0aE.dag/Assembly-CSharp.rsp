@@ -351,9 +351,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/Ball.cs"
+"Assets/Scripts/BallController.cs"
+"Assets/Scripts/CameraController.cs"
+"Assets/Scripts/DeathPart.cs"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/Helix.cs"
+"Assets/Scripts/HelixPart.cs"
+"Assets/Scripts/Platform.cs"
+"Assets/Scripts/StageManager.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
