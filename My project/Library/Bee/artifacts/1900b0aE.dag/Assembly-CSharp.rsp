@@ -356,8 +356,8 @@
 "Assets/Scripts/DeathPart.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HelixPart.cs"
+"Assets/Scripts/Level.cs"
 "Assets/Scripts/Platform.cs"
-"Assets/Scripts/StageManager.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

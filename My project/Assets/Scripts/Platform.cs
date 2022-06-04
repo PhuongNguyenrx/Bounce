@@ -36,4 +36,9 @@ public class Platform : MonoBehaviour
     {
         transform.Rotate(0, rotateAngle,0);
     }
+
+    void OnTriggerEnter()
+    {
+        GameManager.singleton.RestartLevel();
+    }
 }

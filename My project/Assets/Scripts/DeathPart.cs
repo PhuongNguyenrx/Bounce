@@ -7,6 +7,7 @@ public class DeathPart : MonoBehaviour
     void OnEnable()
     {
         GetComponent<Renderer>().material.color = Color.red;
+        GetComponent<Collider>().isTrigger = true;
     }
 
 }
