@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,7 +22,13 @@ public class GameManager : MonoBehaviour
     public List<Level> allLevels = new List<Level>();
     Level level;
     //private List<GameObject> spawnedPlatforms = new List<GameObject>();
-    int score;
+    int score=-1;
+    [SerializeField]
+    GameObject loseScreen;
+    [SerializeField]
+    GameObject winScreen;
+    [SerializeField]
+    TMP_Text scoreText;
     int currentLevel = 0;
 
     public static GameManager singleton;
@@ -45,18 +52,20 @@ public class GameManager : MonoBehaviour
 
     public void NextPlatform()
     {
-        Debug.Log(currentPlatform);
         if (platformCount > platformTotal)
         {
-            currentLevel++;
-            LoadLevel(currentLevel);
+            winScreen.SetActive(true);
             return;
         }
         if (currentPlatform != null)
         {
             Destroy(currentPlatform);
         }
-        
+
+
+        score++;
+        scoreText.text = score.ToString();
+
         GameObject helixPlatform = Instantiate(helixPlatformPrefab, Vector3.up * -score * platformDist , Quaternion.identity);
 
         int PartsToDisable = 12 - level.platforms[platformCount].helixPartCount;
@@ -81,16 +90,27 @@ public class GameManager : MonoBehaviour
                 deathParts.Add(randomPart);
             }
         }
-        score++;
         platformCount++;
         helixPlatform.name = "HelixPlatform " + platformCount;
         currentPlatform= helixPlatform;
     }
 
+    public void GameOver()
+    {
+        loseScreen.SetActive(true);
+    }
     public void RestartLevel()
     {
-        score = 0;
+        score = -1;
+        loseScreen.SetActive(false);
         ballController.ResetPosition();
+        LoadLevel(currentLevel);
+    }
+
+    public void NextLevel()
+    {
+        winScreen.SetActive(false);
+        currentLevel++;
         LoadLevel(currentLevel);
     }
 

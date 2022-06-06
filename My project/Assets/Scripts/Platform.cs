@@ -39,6 +39,6 @@ public class Platform : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        GameManager.singleton.RestartLevel();
+        GameManager.singleton.GameOver();
     }
 }

@@ -25,7 +25,7 @@ public class BallController : MonoBehaviour
         DeathPart deathPart = other.transform.GetComponent<DeathPart>();
         if (deathPart)
         {
-            GameManager.singleton.RestartLevel();
+            GameManager.singleton.GameOver();
             return;
         }
         GameManager.singleton.NextPlatform();

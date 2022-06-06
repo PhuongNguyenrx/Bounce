@@ -11,6 +11,8 @@ public class PlatformManager
 
     public int deathPartCount;
 
+    public float pitch;
+
 }
 [CreateAssetMenu(fileName="NewLevel")]
 public class Level: ScriptableObject

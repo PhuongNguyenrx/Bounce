@@ -17,29 +17,43 @@ MonoBehaviour:
   platforms:
   - helixPartCount: 11
     deathPartCount: 0
+    pitch: 0
   - helixPartCount: 9
     deathPartCount: 0
+    pitch: 4
   - helixPartCount: 8
     deathPartCount: 0
+    pitch: 2
   - helixPartCount: 9
     deathPartCount: 0
+    pitch: 0
   - helixPartCount: 10
     deathPartCount: 0
+    pitch: 2
   - helixPartCount: 8
     deathPartCount: 0
+    pitch: 4
   - helixPartCount: 7
     deathPartCount: 0
+    pitch: 4
   - helixPartCount: 8
     deathPartCount: 0
+    pitch: 4
   - helixPartCount: 9
     deathPartCount: 0
+    pitch: 2
   - helixPartCount: 10
     deathPartCount: 0
+    pitch: 2
   - helixPartCount: 7
     deathPartCount: 0
+    pitch: 2
   - helixPartCount: 10
     deathPartCount: 0
+    pitch: 4
   - helixPartCount: 9
     deathPartCount: 0
+    pitch: 7
   - helixPartCount: 10
     deathPartCount: 0
+    pitch: 7
