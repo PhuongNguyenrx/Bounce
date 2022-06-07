@@ -68,6 +68,10 @@ public class GameManager : MonoBehaviour
 
         GameObject helixPlatform = Instantiate(helixPlatformPrefab, Vector3.up * -score * platformDist , Quaternion.identity);
 
+        AudioSource audio = helixPlatform.GetComponent<AudioSource>();
+        audio.pitch = Mathf.Pow(2, level.platforms[platformCount].pitch / 12);
+        audio.Play();
+
         int PartsToDisable = 12 - level.platforms[platformCount].helixPartCount;
         List<GameObject> disabledParts = new List<GameObject>();
         while (disabledParts.Count < PartsToDisable)
