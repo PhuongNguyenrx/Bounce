@@ -6,8 +6,13 @@ ScriptsOnlyBuild:
     - GameManager
     - Level
     - Platform
+    Unity.AdaptivePerformance.Editor.dll:
+    - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceGeneralSettingsPerBuildTarget
     Unity.AdaptivePerformance.Simulator.Editor.dll:
     - UnityEditor.AdaptivePerformance.Simulator.Editor.SimulatorProviderSettings
+    Unity.AdaptivePerformance.dll:
+    - UnityEngine.AdaptivePerformance.AdaptivePerformanceGeneralSettings
+    - UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSettings
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
@@ -70,6 +75,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameManager
     methodName: RestartLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: StartGame
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -111,6 +119,8 @@ ScriptsOnlyBuild:
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -515,7 +525,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6e273e2ede598bb6ed88215a365ffb91
+      Hash: f245ea12357d0d829e34cc31978bd8e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallController
@@ -587,7 +597,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: e7814955a033f8a898b09e0da2e9f3e9
+      Hash: e6a24879569e3d141ec835237ba7c9b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Level
@@ -815,7 +825,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 485702e657320a81b7b1bcfcd36cfc78
+      Hash: 65c1afc2910e9edefd99aeb24d25e614
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

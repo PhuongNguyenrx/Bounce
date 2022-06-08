@@ -6,7 +6,7 @@ using System;
 [Serializable]
 public class PlatformManager
 {
-    [Range(1,11)]
+    [Range(1,12)]
     public int helixPartCount;
 
     public int deathPartCount;
@@ -18,6 +18,5 @@ public class PlatformManager
 public class Level: ScriptableObject
 {
     public Color backgroundColor = Color.white;
-    public Color ballColor = Color.white;
     public List<PlatformManager> platforms = new List<PlatformManager>();
 }

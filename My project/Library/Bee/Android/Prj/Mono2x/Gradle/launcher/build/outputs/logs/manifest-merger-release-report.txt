@@ -9,7 +9,7 @@ INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Grad
 INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-108
+		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-105
 		INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	android:versionName
@@ -17,7 +17,7 @@ INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Grad
 		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 		INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:109-155
+		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:106-152
 	android:versionCode
 		INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -25,7 +25,7 @@ INJECTED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Grad
 	xmlns:android
 		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:156-196
+		ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:153-193
 supports-screens
 ADDED from D:\GITHUB\Helixtest\My project\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
 	android:largeScreens

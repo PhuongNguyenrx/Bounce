@@ -12,51 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3426df82d3ba64e42b1dbc1e72f0e251, type: 3}
   m_Name: 0
   m_EditorClassIdentifier: 
-  backgroundColor: {r: 0.6352914, g: 0.5502314, b: 0.9056604, a: 1}
-  ballColor: {r: 1, g: 0, b: 0, a: 1}
+  backgroundColor: {r: 0.05882353, g: 0.53333336, b: 0.6509804, a: 1}
   platforms:
-  - helixPartCount: 11
-    deathPartCount: 2
+  - helixPartCount: 12
+    deathPartCount: 0
     pitch: 0
   - helixPartCount: 8
     deathPartCount: 0
     pitch: 0
-  - helixPartCount: 7
-    deathPartCount: 1
-    pitch: 0
   - helixPartCount: 9
     deathPartCount: 3
     pitch: 7
-  - helixPartCount: 8
+  - helixPartCount: 6
     deathPartCount: 4
     pitch: 7
   - helixPartCount: 8
     deathPartCount: 2
     pitch: 9
-  - helixPartCount: 5
-    deathPartCount: 1
+  - helixPartCount: 12
+    deathPartCount: 5
     pitch: 9
-  - helixPartCount: 9
+  - helixPartCount: 8
     deathPartCount: 3
     pitch: 7
-  - helixPartCount: 8
+  - helixPartCount: 7
     deathPartCount: 3
     pitch: 5
-  - helixPartCount: 8
+  - helixPartCount: 6
     deathPartCount: 2
     pitch: 5
-  - helixPartCount: 5
+  - helixPartCount: 4
     deathPartCount: 0
     pitch: 4
-  - helixPartCount: 7
+  - helixPartCount: 6
     deathPartCount: 2
     pitch: 4
-  - helixPartCount: 9
+  - helixPartCount: 12
+    deathPartCount: 6
+    pitch: 2
+  - helixPartCount: 6
     deathPartCount: 1
     pitch: 2
-  - helixPartCount: 10
-    deathPartCount: 1
-    pitch: 2
-  - helixPartCount: 7
-    deathPartCount: 2
+  - helixPartCount: 12
+    deathPartCount: 0
     pitch: 0
